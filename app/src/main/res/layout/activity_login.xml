@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.LoginActivity"
+    android:background="@drawable/gradient_animation"
+    android:id="@+id/layoutLogin"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/body">
+
+        <LinearLayout
+            android:id="@+id/applogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="50dp"
+                android:paddingEnd="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/nakertrans"/>
+
+            <ProgressBar
+                android:id="@+id/loginProgressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="-5dp"
+                android:progressTint="@color/colorPrimary"
+                android:secondaryProgressTint="@color/colorPrimary"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/loginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_username"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleContentDescription="lihat password"
+            app:passwordToggleDrawable="@drawable/ic_remove_red_eye_black_24dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/layoutPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:foreground="?attr/selectableItemBackground"
+                android:drawableEnd="@drawable/ic_menu_send"
+                android:drawableTint="@color/colorWhite"
+                android:padding="10dp"
+                android:text="@string/title_masuk"
+                android:textColor="@color/colorWhite"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="#00FF"
+                android:outlineProvider="none"
+                android:drawableEnd="@drawable/ic_help_outline_black_24dp"
+                android:drawableTint="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="@string/title_lupa_kata_sandi"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

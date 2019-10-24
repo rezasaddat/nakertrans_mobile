@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/opsSDShare"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="@string/title_share"
+        />
+
+    <item
+        android:id="@+id/opsSDDetail"
+        android:icon="@drawable/ic_visibility_black_24dp"
+        android:title="@string/title_detail"
+        />
+
+    <item
+        android:id="@+id/opsSDDownload"
+        android:icon="@drawable/ic_file_download_black_24dp"
+        android:title="@string/title_download"
+        />
+
+    <item
+        android:id="@+id/opsSDDelete"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="@string/title_delete"
+        />
+</menu>

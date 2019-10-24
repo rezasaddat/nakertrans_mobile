@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="agama">
+        <item>@string/pilih_agama</item>
+        <item>@string/agama_islam</item>
+        <item>@string/agama_protestan</item>
+        <item>@string/agama_katolik</item>
+        <item>@string/agama_budha</item>
+        <item>@string/agama_hindu</item>
+        <item>@string/agama_konghucu</item>
+    </string-array>
+
+    <string-array name="jeniskelamin">
+        <item>@string/pilih_jk</item>
+        <item>@string/jk_laki</item>
+        <item>@string/jk_perempuan</item>
+    </string-array>
+
+    <string-array name="statuskawin">
+        <item>@string/pilih_status</item>
+        <item>@string/status_bkawin</item>
+        <item>@string/status_skawin</item>
+    </string-array>
+
+    <string-array name="kewarganegaraan">
+        <item>@string/pilih_kewarganegaraan</item>
+        <item>@string/status_bkawin</item>
+        <item>@string/status_skawin</item>
+    </string-array>
+
+    <string-array name="pekerjaan">
+        <item>@string/pilih_pekerjaan</item>
+        <item>@string/pekerjaan_belum</item>
+        <item>@string/pekerjaan_pelajar</item>
+        <item>@string/pekerjaan_sbekerja</item>
+    </string-array>
+
+    <string-array name="sumberdata">
+        <item>Pilih Sumber Data</item>
+        <item>Sumber 1</item>
+        <item>Sumber 2</item>
+    </string-array>
+
+    <string-array name="sumberkriteria">
+        <item>Pilih kriteria</item>
+        <item>kriteria 1</item>
+        <item>kriteria 2</item>
+    </string-array>
+</resources>

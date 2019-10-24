@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.DetailProgramsPerson"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:id="@+id/progLayoutDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!--NIK-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/nik"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text=":"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/progNIK"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10sp"
+                        android:text="1234567890"
+                        tools:ignore="HardcodedText,InefficientWeight" />
+
+                </LinearLayout>
+                <!--Nama-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/nama"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text=":"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:id="@+id/progNama"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10sp"
+                        android:text="@string/nama"
+                        tools:ignore="InefficientWeight" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_work_black_24dp"
+                android:tint="@color/colorPrimary"/>
+
+        </LinearLayout>
+        <!--Tempat, Tanggal lahir-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="@string/tempat_ttl"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/progTTL"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:text="Indonesia, 01-01-1970"
+                tools:ignore="HardcodedText,InefficientWeight" />
+
+        </LinearLayout>
+        <!--Jenis Kelamin-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="@string/jenis_kelamin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/progJK"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:text="Jenis Kelamin Pemilik"
+                tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded" />
+
+        </LinearLayout>
+        <!--Alamat-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="@string/alamat"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/progAlamat"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:text="Alamat pemilik"/>
+
+        </LinearLayout>
+        <!--RT/RW-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:text="@string/rtrw"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/progRtRw"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:text="000/000"/>
+
+        </LinearLayout>
+        <!--KEL/DES-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:text="@string/keldesa"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/progKelDesa"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:text="Kelurahan/Desa"/>
+
+        </LinearLayout>
+        <!--Kecamatan-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:text="@string/kecamatan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/progKecamatan"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:text="Kecamatan"/>
+
+        </LinearLayout>
+        <!--Agama-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="@string/agama"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/progAgama"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:text="Agama Pemilik"/>
+
+        </LinearLayout>
+        <!--Status Perkawinan-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="@string/status_perkawinan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/progStatus"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:text="Status Perkawinan Pemilik"/>
+
+        </LinearLayout>
+        <!--Pekerjaan-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="@string/pekerjaan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/progPekerjaan"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:text="Pekerjaan Pemilik"/>
+
+        </LinearLayout>
+        <!--Kerwarganegaraan-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="@string/kewarganegaraan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/progKewarganegaraan"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:text="WNI"
+                tools:ignore="HardcodedText,InefficientWeight" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

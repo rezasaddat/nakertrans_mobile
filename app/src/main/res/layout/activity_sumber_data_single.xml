@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".processing.SumberDataSingle"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/sbNIK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="17"
+                    android:focusable="true"
+                    android:hint="@string/nik"
+                    android:inputType="number"
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textIsSelectable="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/sbNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textIsSelectable="true"
+                    android:hint="@string/nama"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/sbTempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textIsSelectable="true"
+                    android:hint="@string/tempat"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/sbTanggalLahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/tanggal_lahir"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <ImageButton
+                    android:id="@+id/btnDateSB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:tint="@color/colorPrimary"
+                    android:backgroundTint="#00ff"
+                    android:layout_weight="1"
+                    android:padding="10sp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    tools:ignore="UnusedAttribute" />
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/sbJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/pilih_jk"
+                android:entries="@array/jeniskelamin"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/sbAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textIsSelectable="true"
+                    android:hint="@string/alamat"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sbRtRw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textIsSelectable="true"
+                    android:hint="@string/rtrw"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sbKelDesa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textIsSelectable="true"
+                    android:hint="@string/keldesa"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sbKecamatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@color/colorPrimary"
+                    android:textIsSelectable="true"
+                    android:hint="@string/kecamatan"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Spinner
+                android:id="@+id/sbAgama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/pilih_agama"
+                android:entries="@array/agama"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"/>
+            <Spinner
+                android:id="@+id/sbStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/pilih_status"
+                android:entries="@array/statuskawin"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"/>
+            <Spinner
+                android:id="@+id/sbPekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/pilih_pekerjaan"
+                android:entries="@array/pekerjaan"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"/>
+            <Spinner
+                android:id="@+id/sbKewarganegaraan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/pilih_kewarganegaraan"
+                android:entries="@array/kewarganegaraan"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"/>
+
+            <Button
+                android:id="@+id/sbSubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/simpan"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="end"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/colorWhite"
+                android:drawableEnd="@drawable/ic_menu_send"
+                android:drawableTint="@color/colorWhite"
+                android:padding="10sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

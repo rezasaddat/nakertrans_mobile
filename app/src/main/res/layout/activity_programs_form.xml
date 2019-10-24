@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".processing.ProgramsForm"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/progNamaProgram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/form_nama_program"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/progSumberData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/form_sumber_data"
+                android:entries="@array/sumberdata"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"/>
+
+            <Spinner
+                android:id="@+id/progKriteria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/form_kriteria"
+                android:entries="@array/sumberkriteria"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/progValueKriteria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/form_value_kriteria"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/progTanggalMulai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/form_tanggal_mulai"
+                        android:layout_weight="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/btnTanggalMulai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:tint="@color/colorPrimary"
+                    android:backgroundTint="#00ff"
+                    android:layout_weight="1"
+                    android:padding="10sp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    tools:ignore="UnusedAttribute" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/progTanggalSelesai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/form_tanggal_selesai"
+                        android:layout_weight="1"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/btnTanggalSelesai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:tint="@color/colorPrimary"
+                    android:backgroundTint="#00ff"
+                    android:layout_weight="1"
+                    android:padding="10sp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    tools:ignore="UnusedAttribute" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/progSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/simpan"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="end"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="16dp"
+                android:drawableEnd="@drawable/ic_menu_send"
+                android:drawableTint="@color/colorWhite"
+                android:padding="10sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

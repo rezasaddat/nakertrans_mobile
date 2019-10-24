@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E93E63</color>
+    <color name="colorPrimaryDark">#FFA51647</color>
+    <color name="colorAccent">#E93E63</color>
+    <color name="colorWhite">#ffff</color>
+
+    <color name="bgFragment">#F0F0F0</color>
+
+    <!--<color name="gradient1">#ffec9e</color>-->
+    <!--<color name="gradient2">#feff89</color>-->
+    <!--<color name="gradient3">#ffb871</color>-->
+    <!--<color name="gradient4">#ff9a6e</color>-->
+    <!--<color name="gradient5">#fb7474</color>-->
+
+    <color name="gradient1">#fffbcc</color>
+    <color name="gradient2">#fed1d8</color>
+    <color name="gradient3">#e1cee4</color>
+    <color name="gradient4">#d8d8ff</color>
+    <color name="gradient5">#d8fff2</color>
+</resources>

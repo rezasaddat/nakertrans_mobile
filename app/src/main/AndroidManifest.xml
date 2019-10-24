@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nakertrans">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".authentication.LoginActivity"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".authentication.ForgotActivity"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".detail_content.SumberDataDetail"
+            android:label="@string/title_sumberdata" />
+        <activity
+            android:name=".detail.PersonDetailSumberData"
+            android:label="@string/title_sumberdata" />
+        <activity
+            android:name=".detail.DetailBerita"
+            android:label="@string/title_berita" />
+        <activity
+            android:name=".processing.SumberDataSingle"
+            android:label="@string/title_sumberdata" />
+        <activity
+            android:name=".processing.ProgramsForm"
+            android:label="@string/title_program" />
+        <activity
+            android:name=".detail_content.ProgramDetail"
+            android:label="@string/title_program" />
+        <activity
+            android:name=".detail.DetailProgramsPerson"
+            android:label="@string/title_program" />
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_pengaturan" />
+        <activity
+            android:name=".processing.BeritaForm"
+            android:label="@string/title_berita" />
+        <activity
+            android:name=".processing.ChangePassword"
+            android:label="@string/title_ubah_pass" />
+    </application>
+
+</manifest>

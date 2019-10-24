@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_sumberdata"
+        android:icon="@drawable/ic_storage_black_24dp"
+        android:title="@string/title_sumberdata" />
+
+    <item
+        android:id="@+id/navigation_program"
+        android:icon="@drawable/ic_work_black_24dp"
+        android:title="@string/title_program" />
+
+    <item
+        android:id="@+id/navigation_berita"
+        android:icon="@drawable/ic_book_black_24dp"
+        android:title="@string/title_berita" />
+
+</menu>

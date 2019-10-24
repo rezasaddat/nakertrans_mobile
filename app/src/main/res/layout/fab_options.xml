@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:padding="@dimen/activity_vertical_margin"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="60dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_new"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                app:itemIconTint="@color/colorWhite"
+                app:itemTextColor="@color/colorWhite"
+                app:menu="@menu/fab_options_menu"
+                android:id="@+id/customBottomSheet"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                app:itemIconTint="@color/colorWhite"
+                app:itemTextColor="@color/colorWhite"
+                app:menu="@menu/fab_options_2_menu"
+                android:id="@+id/customBottomSheet2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
